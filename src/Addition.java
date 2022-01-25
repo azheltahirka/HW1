@@ -8,6 +8,4 @@ class Addition implements Operation {
     public String getSign() {
         return "+";
     }
-
-
 }

@@ -12,6 +12,4 @@ class Division implements Operation {
     public String getSign() {
         return "/";
     }
-
-
 }
