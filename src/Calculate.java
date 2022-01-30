@@ -1,8 +1,10 @@
 class Calculate {
 
-    public void resultOperation(double x, double y, Operation operation) {
+    private SelectOperation selectOperation = new SelectOperation();
+
+    public void resultOperation(double x, double y, int i) {
         try {
-            System.out.println(x + " " + operation.getSign() + " " + y + " = " + operation.performCalculation(x, y));
+            System.out.println(x + " " + selectOperation.getOperation(i).getSign() + " " + y + " = " + selectOperation.getOperation(i).performCalculation(x, y));
         } catch (ArithmeticException ex) {
             System.out.println(ex.getMessage());
         }

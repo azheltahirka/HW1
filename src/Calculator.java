@@ -5,10 +5,9 @@ public class Calculator {
         double first = EnterNumber.enterNumber();
         System.out.println("Enter a second number");
         double second = EnterNumber.enterNumber();
-        System.out.println("Enter a number of Operation( +(1). -(2), *(3), /(4) )");
+        System.out.println("Enter a number of Operation( +(1), -(2), *(3), /(4) )");
         int operationNumber = EnterNumberOfOperation.enterNumberOfOperation();
         Calculate calculate = new Calculate();
-        SelectOperation selectOperation = new SelectOperation();
-        calculate.resultOperation(first, second, selectOperation.getOperation(operationNumber));
+        calculate.resultOperation(first, second, operationNumber);
     }
 }

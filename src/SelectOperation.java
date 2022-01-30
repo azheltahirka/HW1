@@ -1,4 +1,5 @@
 public class SelectOperation implements Operations {
+
     public Operation operation;
 
     @Override
